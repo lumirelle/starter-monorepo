@@ -18,7 +18,7 @@ _description_
 
 ## License
 
-[MIT](./LICENSE) License © [Anthony Fu](https://github.com/lumirelle)
+[MIT](./LICENSE) License © [Lumirelle](https://github.com/lumirelle)
 
 <!-- Badges -->
 

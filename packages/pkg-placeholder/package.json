@@ -3,15 +3,15 @@
   "type": "module",
   "version": "0.0.0",
   "description": "_description_",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "Lumirelle <shabbyacc@outlook.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/pkg-placeholder#readme",
+  "funding": "https://github.com/sponsors/lumirelle",
+  "homepage": "https://github.com/lumirelle/pkg-placeholder#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/pkg-placeholder.git"
+    "url": "git+https://github.com/lumirelle/pkg-placeholder.git"
   },
-  "bugs": "https://github.com/antfu/pkg-placeholder/issues",
+  "bugs": "https://github.com/lumirelle/pkg-placeholder/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {

@@ -6,32 +6,32 @@ packages:
 
 catalogs:
   dev:
-    '@antfu/eslint-config': ^5.3.0
-    '@antfu/ni': ^25.0.0
-    '@antfu/utils': ^9.2.0
-    '@types/node': ^24.5.1
+    '@antfu/eslint-config': ^5.4.1
+    '@antfu/ni': ^26.0.1
+    '@antfu/utils': ^9.2.1
+    '@types/node': ^24.5.2
     bumpp: ^10.2.3
     czg: ^1.12.0
-    eslint: ^9.35.0
-    eslint-plugin-format: ^1.0.1
+    eslint: ^9.36.0
+    eslint-plugin-format: ^1.0.2
     lint-staged: ^16.1.6
     simple-git-hooks: ^2.13.1
     stylelint: ^16.24.0
-    taze: ^19.6.0
+    taze: ^19.7.0
     tsx: ^4.20.5
     typescript: ^5.9.2
     unbuild: ^3.6.1
-    vite: ^7.1.5
+    vite: ^7.1.6
     vitest: ^3.2.4
   docs:
     '@iconify-json/svg-spinners': ^1.2.4
-    '@shikijs/vitepress-twoslash': ^3.12.2
+    '@shikijs/vitepress-twoslash': ^3.13.0
     '@unocss/reset': ^66.5.1
     '@vueuse/core': ^13.9.0
     floating-vue: ^5.2.2
     pinia: ^3.0.3
     unocss: ^66.5.1
-    unplugin-vue-components: ^29.0.0
+    unplugin-vue-components: ^29.1.0
     vite-tsconfig-paths: ^5.1.4
     vitepress: ^2.0.0-alpha.12
     vitepress-plugin-group-icons: ^1.6.3

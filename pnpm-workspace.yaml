@@ -9,7 +9,7 @@ catalogs:
     '@antfu/eslint-config': ^5.4.1
     '@antfu/ni': ^26.1.0
     '@antfu/utils': ^9.3.0
-    '@types/node': ^24.7.0
+    '@types/node': ^24.7.1
     bumpp: ^10.3.1
     czg: ^1.12.0
     eslint: ^9.37.0

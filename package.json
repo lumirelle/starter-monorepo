@@ -9,10 +9,9 @@
     "lint": "eslint --cache .",
     "docs": "nr -C docs docs:dev",
     "docs:build": "nr -C docs docs:build",
-    "prerelease": "nr test:run && nr typecheck",
-    "release": "nr prerelease && bumpp -r && na -r publish",
+    "prelease": "nr test run && nr typecheck",
+    "release": "nr prelease && bumpp -r && na -r publish",
     "test": "vitest",
-    "test:run": "vitest run",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
   },

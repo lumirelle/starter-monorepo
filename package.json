@@ -13,7 +13,8 @@
     "release": "nr prelease && bumpp -r && na -r publish",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "start": "nr -C pkg-placeholder start"
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",

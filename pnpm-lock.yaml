@@ -201,7 +201,11 @@ importers:
         specifier: catalog:docs
         version: 3.5.22(typescript@5.9.3)
 
-  packages/pkg-placeholder: {}
+  packages/pkg-placeholder:
+    devDependencies:
+      '@antfu/utils':
+        specifier: catalog:inlined
+        version: 9.3.0
 
 packages:
 

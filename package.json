@@ -19,8 +19,9 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@antfu/ni": "catalog:dev",
-    "@antfu/utils": "catalog:dev",
+    "@antfu/utils": "catalog:inlined",
     "@types/node": "catalog:dev",
+    "@vitest/coverage-v8": "catalog:testing",
     "bumpp": "catalog:dev",
     "czg": "catalog:dev",
     "eslint": "catalog:dev",
@@ -34,7 +35,7 @@
     "tsx": "catalog:dev",
     "typescript": "catalog:dev",
     "vite": "catalog:dev",
-    "vitest": "catalog:dev"
+    "vitest": "catalog:testing"
   },
   "simple-git-hooks": {
     "pre-commit": "na exec lint-staged"

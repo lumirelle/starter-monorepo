@@ -24,10 +24,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsdown",
     "dev": "tsdown --watch",
+    "build": "tsdown",
+    "start": "tsx src/index.ts",
     "prepublishOnly": "nr build",
-    "start": "tsx src/index.ts"
+    "publish": "bun publish"
   },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined"

@@ -46,6 +46,12 @@
         "@antfu/utils": "catalog:inlined",
       },
     },
+    "playground": {
+      "name": "playground",
+      "devDependencies": {
+        "pkg-placeholder": "workspace:*",
+      },
+    },
   },
   "catalogs": {
     "dev": {
@@ -1164,6 +1170,8 @@
     "pkg-placeholder": ["pkg-placeholder@workspace:packages/pkg-placeholder"],
 
     "pkg-types": ["pkg-types@2.3.0", "", { "dependencies": { "confbox": "^0.2.2", "exsolve": "^1.0.7", "pathe": "^2.0.3" } }, "sha512-SIqCzDRg0s9npO5XQ3tNZioRY1uK06lA41ynBC1YmFTmnY6FjUjVt6s4LoADmwoig1qqD0oK8h1p/8mlMx8Oig=="],
+
+    "playground": ["playground@workspace:playground"],
 
     "pluralize": ["pluralize@8.0.0", "", {}, "sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA=="],
 

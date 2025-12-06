@@ -4,17 +4,17 @@
   "private": true,
   "scripts": {
     "prepare": "simple-git-hooks",
-    "dev": "bun -F '*' dev",
-    "build": "bun -F '*' build",
-    "start": "bun -F pkg-placeholder start",
-    "docs": "bun -F docs docs:dev",
-    "docs:build": "bun -F docs docs:build",
-    "docs:preview": "bun -F docs docs:preview",
-    "play": "bun -F playground play",
+    "dev": "bun run -F '*' dev",
+    "build": "bun run -F '*' build",
+    "start": "bun run -F pkg-placeholder start",
+    "docs": "bun run -F docs docs:dev",
+    "docs:build": "bun run -F docs docs:build",
+    "docs:preview": "bun run -F docs docs:preview",
+    "play": "bun run -F playground play",
     "lint": "eslint --cache .",
     "typecheck": "tsc --noEmit",
     "test": "bun test",
-    "prerelease": "bun test && bun typecheck",
+    "prerelease": "bun run test && bun run typecheck",
     "release": "bumpp -r"
   },
   "workspaces": {
@@ -85,7 +85,7 @@
     "yaml": "catalog:testing"
   },
   "simple-git-hooks": {
-    "pre-commit": "bun lint-staged"
+    "pre-commit": "bun run lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"

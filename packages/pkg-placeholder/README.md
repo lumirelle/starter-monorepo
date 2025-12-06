@@ -7,6 +7,10 @@
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
+> [!Caution]
+>
+> `main` branch of this starter is currently migrate to [bun](https://bun.com/), if you want to use `nodejs` version, please check out the [`nodejs` branch](https://github.com/lumirelle/starter-monorepo/tree/nodejs).
+
 > [!Note]
 >
 > This is a personal fork of [antfu/starter-monorepo](https://github.com/antfu/starter-monorepo) with some customizations.

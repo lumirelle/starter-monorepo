@@ -28,7 +28,7 @@
     "build": "bun run -b tsdown",
     "start": "bun run ./src/index.ts",
     "prepublishOnly": "nr build",
-    "publish": "bun publish"
+    "do-publish": "npm publish --access public"
   },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined"

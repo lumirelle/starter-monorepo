@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepare": "simple-git-hooks",
+    "prepare": "bun run -b simple-git-hooks",
     "dev": "bun run -F '*' dev",
     "build": "bun run -F '*' build",
     "start": "bun run -F pkg-placeholder start",
@@ -12,10 +12,10 @@
     "docs:preview": "bun run -F docs docs:preview",
     "play": "bun run -F playground play",
     "lint": "eslint --cache .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "bun run -b tsc --noEmit",
     "test": "bun test",
     "prerelease": "bun run test && bun run typecheck",
-    "release": "bumpp -r"
+    "release": "bun run -b bumpp -r"
   },
   "workspaces": {
     "packages": [

@@ -24,8 +24,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "tsdown --watch",
-    "build": "tsdown",
+    "dev": "bun run -b tsdown --watch",
+    "build": "bun run -b tsdown",
     "start": "bun run ./src/index.ts",
     "prepublishOnly": "nr build",
     "publish": "bun publish"

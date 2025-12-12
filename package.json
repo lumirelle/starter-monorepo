@@ -28,7 +28,6 @@
       "dev": {
         "@antfu/eslint-config": "^6.6.1",
         "bumpp": "^10.3.2",
-        "czg": "^1.12.0",
         "eslint": "^9.39.1",
         "eslint-plugin-format": "^1.1.0",
         "lint-staged": "^16.2.7",
@@ -69,7 +68,6 @@
     "@antfu/utils": "catalog:inlined",
     "@types/bun": "catalog:types",
     "bumpp": "catalog:dev",
-    "czg": "catalog:dev",
     "eslint": "catalog:dev",
     "eslint-plugin-format": "catalog:dev",
     "lint-staged": "catalog:dev",

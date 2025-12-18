@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "prepare": "bun run -b simple-git-hooks",
+    "prepare": "bun run simple-git-hooks",
     "dev": "bun run -F '*' dev",
     "build": "bun run -F '*' build",
     "start": "bun run --cwd packages/pkg-placeholder start",
@@ -11,11 +11,11 @@
     "docs:build": "bun run --cwd docs docs:build",
     "docs:preview": "bun run --cwd docs docs:preview",
     "play": "bun run --cwd playground play",
-    "lint": "eslint --cache .",
-    "typecheck": "bun run -b tsc --noEmit",
+    "lint": "bun run eslint --cache .",
+    "typecheck": "bun run tsc --noEmit",
     "test": "bun test",
     "prerelease": "bun run test && bun run typecheck",
-    "release": "bun run -b bumpp -r"
+    "release": "bun run bumpp -r"
   },
   "workspaces": {
     "packages": [
@@ -81,7 +81,7 @@
     "yaml": "catalog:testing"
   },
   "simple-git-hooks": {
-    "pre-commit": "bun run -b lint-staged"
+    "pre-commit": "bun run lint-staged"
   },
   "lint-staged": {
     "*": "eslint --fix"

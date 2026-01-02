@@ -6,8 +6,9 @@
   },
 
   // LSP
-  // Try out ts-go for better performance
-  "typescript.experimental.useTsgo": true,
+  // Vue language tools is not compatible with ts-go currently,
+  // See https://github.com/vuejs/language-tools/issues/5381 for details.
+  "typescript.experimental.useTsgo": false,
 
   // Formatter & Linter
   "editor.formatOnSave": false,
@@ -26,7 +27,12 @@
     "jsonc",
     "yaml",
     "toml",
-    "xml"
+    "xml",
+    "css",
+    "postcss",
+    "scss",
+    "sass",
+    "less"
   ],
   "eslint.rules.customizations": [
     { "rule": "style/*", "severity": "off" },

@@ -18,7 +18,6 @@
         "simple-git-hooks": "catalog:dev",
         "tsdown": "catalog:build",
         "typescript": "catalog:dev",
-        "vite": "catalog:dev",
         "vitest-package-exports": "catalog:testing",
       },
     },
@@ -68,7 +67,6 @@
       "lint-staged": "^16.2.7",
       "simple-git-hooks": "git+https://github.com/toplenboren/simple-git-hooks.git#7625657",
       "typescript": "^5.9.3",
-      "vite": "^7.3.0",
     },
     "docs": {
       "@iconify-json/svg-spinners": "^1.2.4",

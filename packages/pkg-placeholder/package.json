@@ -28,8 +28,7 @@
   "scripts": {
     "dev": "bun run tsdown --watch",
     "build": "bun run tsdown",
-    "start": "bun run ./src/index.ts",
-    "prepublishOnly": "bun run build"
+    "start": "bun run ./src/index.ts"
   },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined"

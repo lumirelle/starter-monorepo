@@ -2,6 +2,9 @@
   "name": "pkg-placeholder",
   "type": "module",
   "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "_description_",
   "author": "Lumirelle <shabbyacc@outlook.com>",
   "license": "MIT",
@@ -26,8 +29,7 @@
     "dev": "bun run tsdown --watch",
     "build": "bun run tsdown",
     "start": "bun run ./src/index.ts",
-    "prepublishOnly": "bun run build",
-    "do-publish": "npm publish --access public"
+    "prepublishOnly": "bun run build"
   },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined"

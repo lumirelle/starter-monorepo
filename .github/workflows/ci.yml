@@ -10,7 +10,7 @@ permissions: {}
 
 jobs:
   ci:
-    uses: lumirelle/workflows/.github/workflows/ci.yml@v2
+    uses: lumirelle/workflows/.github/workflows/ci.yml@v3
     with:
       # If your packages need to reference build artifacts each other during checks,
       # set this to true to build them before running checks.

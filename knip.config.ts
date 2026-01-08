@@ -1,20 +1,18 @@
 import type { KnipConfig } from 'knip'
 
 export default {
+  // @keep-sorted
   workspaces: {
     '.': {
       // @keep-sorted
       ignoreDependencies: [
         '@antfu/utils',
+        '@arethetypeswrong/core',
         'bumpp',
         'lint-staged',
         'pkg-placeholder',
-      ],
-    },
-    'playground': {
-      // @keep-sorted
-      ignoreDependencies: [
-        'pkg-placeholder',
+        'publint',
+        'tsdown',
       ],
     },
     'docs': {
@@ -26,6 +24,12 @@ export default {
         'floating-vue',
         'pinia',
         'uno.css',
+      ],
+    },
+    'playground': {
+      // @keep-sorted
+      ignoreDependencies: [
+        'pkg-placeholder',
       ],
     },
   },

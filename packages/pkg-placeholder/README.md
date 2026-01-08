@@ -38,7 +38,9 @@ _description_
 
 This starter recommends using [NPM Trusted Publisher](https://github.com/e18e/ecosystem-issues/issues/201), where the release is done on CI to ensure the security of the packages.
 
-To do so, you need to run `bun run build && bun publish` manually for each package the very first time to create the packages on npm, and then go to `https://www.npmjs.com/package/<your-package-name>/access` to set the connection to your GitHub repo.
+To do so, you need to run `bun run build && bun pm pack --filename <your-package-name>.tgz && bunx npm publish <your-package-name>.tgz` manually **for each package** the very first time to create it on npm (you can also refer to [this helpful Bash script](https://github.com/lumirelle/workflows/blob/v3/.github/workflows/release.yml#L51-L55), `packages` in that script is a path regex to the folder contains your packages).
+
+Then, you should go to `https://www.npmjs.com/package/<your-package-name>/access` to set the connection to your GitHub repo. There also a useful cli tool can help you open your packages at once called [`open-packages-on-npm`](https://github.com/antfu/open-packages-on-npm).
 
 Then for the future releases, you can run `bun run release` to do the release and the GitHub Actions will take care of the release process.
 

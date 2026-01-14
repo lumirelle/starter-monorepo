@@ -5,13 +5,10 @@
       "bun"
     ]
   },
-  // Files can include both Bun and Node.js api
+  // Files should not include both Bun api
   // TODO(Lumirelle): If we migrate to `bun build`, and bun polyfills for `node` preset are complete,
   // then we may no longer need a separate tsconfig for Bun.
-  "include": [
-    "./*",
-    "./test/**/*",
-    "./docs/**/*",
-    "./playground/**/*"
+  "exclude": [
+    "**/src/**/*"
   ]
 }

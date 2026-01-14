@@ -1,45 +1,13 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    // Language and Environment
-    "target": "ESNext",
-    "lib": [
-      "ESNext"
-    ],
-    "moduleDetection": "force",
-    "useDefineForClassFields": true,
-    "libReplacement": false,
-
-    // Modules
-    "module": "preserve",
-    "moduleResolution": "bundler",
-    "paths": {
-    },
-    "resolveJsonModule": true,
     "types": [
       "bun"
-    ],
-    "allowImportingTsExtensions": true,
-
-    // JavaScript Support
-    "allowJs": true,
-
-    // Type Checking
-    "strict": true,
-    "noImplicitOverride": true,
-    "noImplicitThis": true,
-    "noUncheckedIndexedAccess": true,
-
-    // Emit
-    "noEmit": true,
-
-    // Interop Constraints
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": true,
-
-    // Completeness
-    "skipLibCheck": true
+    ]
   },
+  // Files can include both Bun and Node.js api
+  // TODO(Lumirelle): If we migrate to `bun build`, and bun polyfills for `node` preset are complete,
+  // then we may no longer need a separate tsconfig for Bun.
   "include": [
     "./*",
     "./test/**/*",

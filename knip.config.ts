@@ -7,12 +7,9 @@ export default {
       // @keep-sorted
       ignoreDependencies: [
         '@antfu/utils',
-        '@arethetypeswrong/core',
         'bumpp',
         'lint-staged',
         'pkg-placeholder',
-        'publint',
-        'tsdown',
       ],
     },
     'docs': {

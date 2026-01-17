@@ -17,17 +17,18 @@
     "access": "public"
   },
   "exports": {
-    ".": "./dist/index.mjs",
+    ".": "./dist/index.js",
     "./package.json": "./package.json"
   },
-  "types": "./dist/index.d.mts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "bun run tsdown --watch",
-    "build": "bun run tsdown",
-    "start": "bun run ./src/index.ts"
+    "dev": "bun ./scripts/dev.ts",
+    "build": "bun ./scripts/build.ts",
+    "start": "bun run ./src/index.ts",
+    "distcheck": "bun attw --pack --profile esm-only && bun publint"
   },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined"

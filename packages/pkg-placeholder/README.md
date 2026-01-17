@@ -11,22 +11,15 @@
 >
 > `main` branch of this starter is currently migrate to [bun](https://bun.com/), if you want to use `nodejs` version, please check out the [`nodejs` branch](https://github.com/lumirelle/starter-monorepo/tree/nodejs).
 >
-> Why? Just see the benchmark results under [the `/benchmark` folder in ts starter project](https://github.com/lumirelle/starter-ts/tree/main/benchmark).
+> Why? Because Bun has much better performance than Node.js, see some simple benchmark results under [the `/benchmark` folder in ts starter project](https://github.com/lumirelle/starter-ts/tree/main/benchmark), or just visit [Bun's official documentation](https://bun.com/docs).
 >
-> Migration progress:
+> Want to know if the `Bun` runtime is being used? Add following into the code:
 >
-> - [x] Package Manager: `pnpm` -> `bun`
-> - [ ] Build Tool: Still using `rolldown` with `typescript`
-> - [x] Test Runner: `vitest` -> `bun`
-> - [x] Runtime: `nodejs` -> `bun`
->
->   How to check? Add the following code at begin of the running script:
->
->   ```ts
->   console.log(process.execPath)
->   console.log('Node.js version:', process.version)
->   console.log('Bun detected:', typeof Bun !== 'undefined')
->   ```
+> ```ts
+> console.log(process.execPath)
+> console.log('Node.js version:', process.version)
+> console.log('Bun detected:', typeof Bun !== 'undefined')
+> ```
 
 > [!Note]
 >

@@ -5,7 +5,6 @@
     "": {
       "devDependencies": {
         "@antfu/eslint-config": "catalog:check",
-        "@antfu/utils": "catalog:inlined",
         "@arethetypeswrong/cli": "catalog:check",
         "@types/bun": "catalog:types",
         "bumpp": "catalog:dev",
@@ -41,8 +40,8 @@
     "packages/pkg-placeholder": {
       "name": "pkg-placeholder",
       "version": "0.0.0",
-      "devDependencies": {
-        "@antfu/utils": "catalog:inlined",
+      "dependencies": {
+        "@antfu/utils": "catalog:prod",
       },
     },
     "playground": {
@@ -84,7 +83,7 @@
       "vitepress-plugin-group-icons": "^1.7.1",
       "vue": "^3.5.27",
     },
-    "inlined": {
+    "prod": {
       "@antfu/utils": "^9.3.0",
     },
     "test": {

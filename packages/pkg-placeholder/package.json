@@ -25,8 +25,8 @@
     "dist"
   ],
   "scripts": {
-    "dev": "bun ./scripts/dev.ts",
-    "build": "bun ./scripts/build.ts",
+    "dev": "bunup --watch",
+    "build": "bunup",
     "start": "bun run ./src/index.ts",
     "distcheck": "bun attw --pack --profile esm-only && bun publint"
   },

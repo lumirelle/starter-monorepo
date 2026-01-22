@@ -34,7 +34,7 @@
         "typescript": "^5.9.3"
       },
       "build": {
-        "@lumirelle/build-with-bun": "^0.0.3"
+        "bunup": "^0.16.20"
       },
       "check": {
         "@antfu/eslint-config": "^7.0.0",
@@ -74,9 +74,9 @@
     "@antfu/eslint-config": "catalog:check",
     "@antfu/utils": "catalog:inlined",
     "@arethetypeswrong/cli": "catalog:check",
-    "@lumirelle/build-with-bun": "catalog:build",
     "@types/bun": "catalog:types",
     "bumpp": "catalog:dev",
+    "bunup": "catalog:build",
     "eslint": "catalog:check",
     "eslint-plugin-format": "catalog:check",
     "knip": "catalog:check",

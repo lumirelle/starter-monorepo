@@ -3,9 +3,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "docs:dev": "bun run vitepress dev",
-    "docs:build": "bun run vitepress build",
-    "docs:preview": "bun run vitepress preview"
+    "docs:dev": "bun vitepress dev",
+    "docs:build": "bun vitepress build",
+    "docs:preview": "bun vitepress preview"
   },
   "devDependencies": {
     "@iconify-json/svg-spinners": "catalog:docs",

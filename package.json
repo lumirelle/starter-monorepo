@@ -14,7 +14,7 @@
     "lint": "bun eslint --cache .",
     "typecheck": "bun tsc --noEmit",
     "usagecheck": "bun knip",
-    "distcheck": "bun run --filter 'pkg-placeholder' distcheck",
+    "distcheck": "bun run --filter '*' distcheck",
     "check": "bun run lint && bun run typecheck && bun run usagecheck && bun run distcheck",
     "test": "bun test",
     "prerelease": "bun run build && bun run check && bun run test",

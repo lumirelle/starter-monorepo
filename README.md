@@ -1,1 +1,1 @@
-./packages/pkg-placeholder/README.md
+packages//pkg-placeholder//README.md

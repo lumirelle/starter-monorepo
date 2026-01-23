@@ -28,7 +28,7 @@
       "examples/*"
     ],
     "catalogs": {
-      "prod": {
+      "inlined": {
         "@antfu/utils": "^9.3.0"
       },
       "dev": {

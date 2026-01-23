@@ -34,7 +34,7 @@
     "start": "bun run ./src/index.ts",
     "distcheck": "bun attw --pack --profile esm-only && bun publint"
   },
-  "dependencies": {
-    "@antfu/utils": "catalog:prod"
+  "devDependencies": {
+    "@antfu/utils": "catalog:inlined"
   }
 }

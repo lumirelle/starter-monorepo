@@ -41,7 +41,7 @@ Then for the future releases, you can run `bun run release` to do the release an
 
 <p align="center">
   <a href="https://cdn.jsdelivr.net/gh/lumirelle/static/sponsors.svg">
-    <img src='https://cdn.jsdelivr.net/gh/lumirelle/static/sponsors.svg'/>
+    <img src='https://cdn.jsdelivr.net/gh/lumirelle/static/sponsors.svg' alt="Sponsors"/>
   </a>
 </p>
 

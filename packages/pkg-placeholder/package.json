@@ -29,10 +29,9 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "bunup --watch",
-    "build": "bunup",
     "start": "bun run ./src/index.ts",
-    "distcheck": "bun attw --pack --profile esm-only && bun publint"
+    "check:type": "bun tsc --noEmit",
+    "check:dist": "bun --parallel 'attw --pack --profile esm-only' publint"
   },
   "devDependencies": {
     "@antfu/utils": "catalog:inlined"

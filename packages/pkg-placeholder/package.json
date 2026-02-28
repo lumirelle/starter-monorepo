@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "bun run ./src/index.ts",
-    "check:type": "bun tsc --noEmit",
+    "check:type": "bun tsgo --noEmit",
     "check:dist": "bun --parallel 'attw --pack --profile esm-only' publint"
   },
   "devDependencies": {

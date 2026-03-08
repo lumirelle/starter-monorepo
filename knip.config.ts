@@ -7,7 +7,7 @@ export default {
       ignoreDependencies: ['pkg-placeholder', '@arethetypeswrong/cli', 'publint'],
       ignoreFiles: ['bunup.config.ts'],
     },
-    docs: {
+    'docs': {
       ignoreDependencies: [
         '@iconify-json/svg-spinners',
         '@unocss/reset',
@@ -20,7 +20,7 @@ export default {
     'packages/pkg-placeholder': {
       ignoreDependencies: ['@antfu/utils'],
     },
-    playground: {
+    'playground': {
       ignoreDependencies: ['pkg-placeholder'],
     },
   },

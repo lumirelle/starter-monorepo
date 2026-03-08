@@ -1,6 +1,6 @@
 {
   // Code Quality
-  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.oxc": "always",
     "source.fixAll.eslint": "always",
@@ -27,11 +27,5 @@
     "scss",
     "sass",
     "less"
-  ],
-
-  // File associations
-  "files.associations": {
-    ".butlerrc": "properties",
-    "*.json": "jsonc"
-  }
+  ]
 }

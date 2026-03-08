@@ -5,7 +5,6 @@ import oxlint from 'eslint-plugin-oxlint'
 export default antfu(
   {
     type: 'lib',
-    stylistic: false,
     ignores: ['README.md'],
   },
   ...oxlint.buildFromOxlintConfigFile('.oxlintrc.json'),

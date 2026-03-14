@@ -1,13 +1,15 @@
-/* eslint perfectionist/sort-objects: "error" */
 import type { KnipConfig } from 'knip'
 
 export default {
   workspaces: {
     '.': {
-      ignoreDependencies: ['pkg-placeholder', '@arethetypeswrong/cli', 'publint'],
+      /// keep-sorted
+      ignoreDependencies: ['@arethetypeswrong/cli', 'pkg-placeholder', 'publint'],
+      /// keep-sorted
       ignoreFiles: ['bunup.config.ts'],
     },
     'docs': {
+      /// keep-sorted
       ignoreDependencies: [
         '@iconify-json/svg-spinners',
         '@unocss/reset',
@@ -18,10 +20,8 @@ export default {
       ],
     },
     'packages/pkg-placeholder': {
+      /// keep-sorted
       ignoreDependencies: ['@antfu/utils'],
-    },
-    'playground': {
-      ignoreDependencies: ['pkg-placeholder'],
     },
   },
 } satisfies KnipConfig

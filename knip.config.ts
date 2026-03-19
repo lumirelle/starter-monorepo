@@ -4,7 +4,7 @@ export default {
   workspaces: {
     '.': {
       /// keep-sorted
-      ignoreDependencies: ['@arethetypeswrong/cli', 'pkg-placeholder', 'publint'],
+      ignoreDependencies: ['@arethetypeswrong/cli', '@lumirelle/oxlint-config', 'pkg-placeholder', 'publint'],
       /// keep-sorted
       ignoreFiles: ['bunup.config.ts'],
     },

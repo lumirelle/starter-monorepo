@@ -1,6 +1,0 @@
-{
-  "extends": "@lumirelle/tsconfig/lib",
-  "compilerOptions": {
-    "types": ["bun"]
-  }
-}

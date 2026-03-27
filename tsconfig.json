@@ -1,7 +1,8 @@
 {
   "references": [
     { "path": "./packages/pkg-placeholder" },
-    { "path": "./playground" }
+    { "path": "./playground" },
+    { "path": "./tsconfig.node.json" }
   ],
   "files": []
 }

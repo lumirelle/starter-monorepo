@@ -4,7 +4,7 @@ export default {
   workspaces: {
     '.': {
       /// keep-sorted
-      ignoreDependencies: ['@arethetypeswrong/cli', '@lumirelle/oxlint-config', 'pkg-placeholder', 'publint'],
+      ignoreDependencies: ['@arethetypeswrong/cli', '@lumirelle/oxlint-config', 'publint'],
       /// keep-sorted
       ignoreFiles: ['bunup.config.ts'],
     },
@@ -18,10 +18,6 @@ export default {
         'pinia',
         'uno.css',
       ],
-    },
-    'packages/pkg-placeholder': {
-      /// keep-sorted
-      ignoreDependencies: ['@antfu/utils'],
     },
   },
 } satisfies KnipConfig

@@ -33,8 +33,5 @@
   "scripts": {
     "start": "bun run ./src/index.ts",
     "pubcheck": "bun run --parallel 'attw --pack --profile esm-only' publint"
-  },
-  "devDependencies": {
-    "@antfu/utils": "catalog:inlined"
   }
 }

@@ -1,8 +1,13 @@
 {
-  "references": [
-    { "path": "./packages/pkg-placeholder" },
-    { "path": "./playground" },
-    { "path": "./tsconfig.node.json" }
-  ],
-  "files": []
+  "extends": "@lumirelle/tsconfig/ts",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "paths": {
+      "@monorepo/pkg-placeholder": ["./packages/pkg-placeholder/src/index"],
+      "@monorepo/pkg-placeholder/*": ["./packages/pkg-placeholder/src/*"]
+    },
+    "types": ["bun-types"],
+    "allowJs": true
+  },
+  "include": ["scripts/**/*", "test/**/*", "*.js", "*.ts"]
 }

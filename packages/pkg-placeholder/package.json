@@ -32,6 +32,7 @@
   },
   "scripts": {
     "start": "bun run ./src/index.ts",
+    "typecheck": "tsc --build --noEmit",
     "pubcheck": "bun run --parallel 'attw --pack --profile esm-only' publint"
   }
 }

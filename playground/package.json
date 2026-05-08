@@ -3,7 +3,8 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "play": "bun run ./src/index.ts"
+    "play": "bun run ./src/index.ts",
+    "typecheck": "tsc --build --noEmit"
   },
   "devDependencies": {
     "pkg-placeholder": "workspace:*"

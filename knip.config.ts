@@ -3,13 +3,10 @@ import type { KnipConfig } from 'knip'
 export default {
   workspaces: {
     '.': {
-      /// keep-sorted
+      entry: ['bunup.config.ts'],
       ignoreDependencies: ['@arethetypeswrong/cli', '@lumirelle/oxlint-config', 'publint'],
-      /// keep-sorted
-      ignoreFiles: ['bunup.config.ts'],
     },
     'docs': {
-      /// keep-sorted
       ignoreDependencies: [
         '@iconify-json/svg-spinners',
         '@unocss/reset',

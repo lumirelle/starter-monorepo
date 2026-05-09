@@ -19,7 +19,7 @@
         "oxlint": "catalog:check",
         "oxlint-tsgolint": "catalog:check",
         "publint": "catalog:check",
-        "simple-git-hooks": "catalog:dev",
+        "simple-git-hooks": "catalog:check",
         "tsnapi": "catalog:test",
         "typescript": "catalog:types",
       },
@@ -73,10 +73,10 @@
       "oxlint": "^1.63.0",
       "oxlint-tsgolint": "^0.22.1",
       "publint": "^0.3.19",
+      "simple-git-hooks": "git+https://github.com/toplenboren/simple-git-hooks.git#7625657",
     },
     "dev": {
       "bumpp": "^11.0.1",
-      "simple-git-hooks": "git+https://github.com/toplenboren/simple-git-hooks.git#7625657",
     },
     "docs": {
       "@iconify-json/svg-spinners": "^1.2.4",

@@ -14,6 +14,7 @@
     "play": "bun run --cwd playground play",
     "lint": "bun --parallel oxlint eslint",
     "lint:fix": "oxlint --fix && eslint --fix",
+    "pretypecheck": "bun run build",
     "typecheck": "bun run --filter '*' typecheck",
     "unused": "knip-bun",
     "check": "bun run --parallel lint typecheck unused",

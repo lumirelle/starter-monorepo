@@ -13,6 +13,7 @@
   },
   "bugs": "https://github.com/lumirelle/pkg-placeholder/issues",
   "keywords": [],
+  "sideEffects": false,
   "exports": {
     ".": {
       "import": {

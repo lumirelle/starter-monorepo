@@ -4,7 +4,12 @@ export default {
   workspaces: {
     '.': {
       entry: ['bunup.config.ts'],
-      ignoreDependencies: ['@arethetypeswrong/cli', '@lumirelle/oxlint-config', 'publint'],
+      ignoreDependencies: [
+        '@arethetypeswrong/cli',
+        '@lumirelle/oxlint-config',
+        '@lumirelle/pkg-placeholder',
+        'publint',
+      ],
     },
     'docs': {
       ignoreDependencies: [

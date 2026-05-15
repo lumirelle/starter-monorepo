@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: 'pkg-placeholder'
+  name: '@lumirelle/pkg-placeholder'
   actions:
     - theme: brand
       text: Get Started

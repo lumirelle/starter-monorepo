@@ -30,6 +30,9 @@
       "examples/*"
     ],
     "catalogs": {
+      "subpackage": {
+        "@lumirelle/pkg-placeholder": "workspace:*"
+      },
       "dev": {
         "bumpp": "^11.1.0"
       },
@@ -79,6 +82,7 @@
     "@antfu/eslint-config": "catalog:check",
     "@arethetypeswrong/cli": "catalog:check",
     "@lumirelle/oxlint-config": "catalog:check",
+    "@lumirelle/pkg-placeholder": "catalog:subpackage",
     "@lumirelle/tsconfig": "catalog:types",
     "@types/node": "catalog:types",
     "bumpp": "catalog:dev",

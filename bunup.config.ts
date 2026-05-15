@@ -2,7 +2,7 @@ import { defineWorkspace } from 'bunup'
 
 export default defineWorkspace([
   {
-    name: 'pkg-placeholder',
+    name: '@lumirelle/pkg-placeholder',
     root: 'packages/pkg-placeholder',
   },
 ])

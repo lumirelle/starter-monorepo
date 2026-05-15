@@ -7,6 +7,7 @@
         "@antfu/eslint-config": "catalog:check",
         "@arethetypeswrong/cli": "catalog:check",
         "@lumirelle/oxlint-config": "catalog:check",
+        "@lumirelle/pkg-placeholder": "catalog:subpackage",
         "@lumirelle/tsconfig": "catalog:types",
         "@types/node": "catalog:types",
         "bumpp": "catalog:dev",
@@ -43,13 +44,13 @@
       },
     },
     "packages/pkg-placeholder": {
-      "name": "pkg-placeholder",
+      "name": "@lumirelle/pkg-placeholder",
       "version": "0.0.0",
     },
     "playground": {
       "name": "playground",
       "devDependencies": {
-        "pkg-placeholder": "workspace:*",
+        "@lumirelle/pkg-placeholder": "catalog:subpackage",
       },
     },
   },
@@ -92,6 +93,9 @@
       "vitepress": "^2.0.0-alpha.17",
       "vitepress-plugin-group-icons": "^1.7.5",
       "vue": "^3.5.34",
+    },
+    "subpackage": {
+      "@lumirelle/pkg-placeholder": "workspace:*",
     },
     "test": {
       "tsnapi": "^0.3.3",
@@ -213,6 +217,8 @@
     "@loaderkit/resolve": ["@loaderkit/resolve@1.0.5", "", { "dependencies": { "@braidai/lang": "^1.0.0" } }, "sha512-fhkdGM57xhJ7CO91MUgbQlb0ClP0AJ9vB3yoVnBTslYJqrJOCVEbOprZcxZlexdMbmTBPQqVcQYr+j4oRRtIZA=="],
 
     "@lumirelle/oxlint-config": ["@lumirelle/oxlint-config@0.4.0", "", { "peerDependencies": { "@antfu/eslint-config": ">=9.0.0", "eslint-plugin-oxlint": ">=1.64.0", "oxlint": ">=1.64.0", "oxlint-tsgolint": ">=0.22.0" }, "optionalPeers": ["@antfu/eslint-config", "eslint-plugin-oxlint", "oxlint-tsgolint"] }, "sha512-TSIDuWLqX8dinJkbl81FfyGOApfJ8s6my+fPur3kPbEzUe5PKNPgIJumpiTbSgrtlSzSxFfh/6HjWjlxAwFqUw=="],
+
+    "@lumirelle/pkg-placeholder": ["@lumirelle/pkg-placeholder@workspace:packages/pkg-placeholder"],
 
     "@lumirelle/tsconfig": ["@lumirelle/tsconfig@0.1.4", "", { "peerDependencies": { "typescript": ">=6.0.2" } }, "sha512-XiYyicrLyEUpX6L4nUhHsTEBR7330WxQYcU/vt5lm4K380O+1OiiHFgkWflPv2ubiRF003e2qQ+8y7YQTlq9JQ=="],
 
@@ -1197,8 +1203,6 @@
     "picomatch": ["picomatch@4.0.4", "", {}, "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A=="],
 
     "pinia": ["pinia@3.0.4", "", { "dependencies": { "@vue/devtools-api": "^7.7.7" }, "peerDependencies": { "typescript": ">=4.5.0", "vue": "^3.5.11" }, "optionalPeers": ["typescript"] }, "sha512-l7pqLUFTI/+ESXn6k3nu30ZIzW5E2WZF/LaHJEpoq6ElcLD+wduZoB2kBN19du6K/4FDpPMazY2wJr+IndBtQw=="],
-
-    "pkg-placeholder": ["pkg-placeholder@workspace:packages/pkg-placeholder"],
 
     "pkg-types": ["pkg-types@2.3.1", "", { "dependencies": { "confbox": "^0.2.4", "exsolve": "^1.0.8", "pathe": "^2.0.3" } }, "sha512-y+ichcgc2LrADuhLNAx8DFjVfgz91pRxfZdI3UDhxHvcVEZsenLO+7XaU5vOp0u/7V/wZ+plyuQxtrDlZJ+yeg=="],
 

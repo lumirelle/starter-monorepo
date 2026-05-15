@@ -18,15 +18,15 @@ const GUIDES: DefaultTheme.NavItemWithLink[] & DefaultTheme.SidebarItem[] = [
 
 const VERSIONS: (DefaultTheme.NavItemWithLink | DefaultTheme.NavItemChildren)[] = [
   { text: `v${version} (current)`, link: '/' },
-  { text: `Release Notes`, link: 'https://github.com/antfu/pkg-placeholder/releases' },
+  { text: `Release Notes`, link: 'https://github.com/lumirelle/pkg-placeholder/releases' },
   {
     text: `Contributing`,
-    link: 'https://github.com/antfu/pkg-placeholder/blob/main/CONTRIBUTING.md',
+    link: 'https://github.com/lumirelle/pkg-placeholder/blob/main/CONTRIBUTING.md',
   },
 ]
 
 export default defineConfig({
-  title: 'pkg-placeholder',
+  title: '@lumirelle/pkg-placeholder',
   description: '_description_',
   head: [
     // ['meta', { name: 'theme-color', content: '#ffffff' }],
@@ -53,13 +53,13 @@ export default defineConfig({
       '/': [{ text: 'Guide', items: GUIDES }],
     },
     editLink: {
-      pattern: 'https://github.com/antfu/pkg-placeholder/edit/main/docs/:path',
+      pattern: 'https://github.com/lumirelle/pkg-placeholder/edit/main/docs/:path',
       text: 'Suggest changes to this page',
     },
     search: {
       provider: 'local',
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/antfu/pkg-placeholder' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/lumirelle/pkg-placeholder' }],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2025-PRESENT Anthony Fu.',

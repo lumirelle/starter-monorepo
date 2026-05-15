@@ -11,7 +11,8 @@
 >
 > `main` branch of this starter is currently migrate to [bun](https://bun.com/), if you want to use `nodejs` version, please check out the [`nodejs` branch](https://github.com/lumirelle/starter-monorepo/tree/nodejs).
 >
-> Why? Because Bun has much better performance than Node.js, see some simple benchmark results under [the `/benchmark` folder in ts starter project](https://github.com/lumirelle/starter-ts/tree/main/benchmark), or just visit [Bun's official documentation](https://bun.com/docs).
+> See [Bun vs. Node.js comparison table](https://strapi.io/blog/bun-vs-nodejs-performance-comparison-guide).
+
 
 > [!Note]
 >

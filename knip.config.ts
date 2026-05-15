@@ -7,7 +7,6 @@ export default {
       ignoreDependencies: [
         '@arethetypeswrong/cli',
         '@lumirelle/oxlint-config',
-        '@lumirelle/pkg-placeholder',
         'publint',
       ],
     },

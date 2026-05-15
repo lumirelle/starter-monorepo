@@ -7,6 +7,6 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@lumirelle/pkg-placeholder": "catalog:subpackage"
+    "@lumirelle/pkg-placeholder": "catalog:workspace"
   }
 }

@@ -31,10 +31,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "dev": "tsdown --watch",
-    "build": "tsdown --publint --attw.profile esm-only",
-    "start": "bun run ./src/index.ts",
-    "typecheck": "tsc --noEmit"
+  "devDependencies": {
+    "@arethetypeswrong/core": "catalog:check",
+    "publint": "catalog:check",
+    "tsdown": "catalog:build",
+    "typescript": "catalog:types"
   }
 }

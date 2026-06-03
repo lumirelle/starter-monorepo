@@ -3,7 +3,13 @@ import type { KnipConfig } from 'knip'
 export default {
   workspaces: {
     '.': {
-      ignoreDependencies: ['@lumirelle/oxlint-config'],
+      entry: ['./test/**/*.{ts,js}'],
+      ignoreBinaries: ['mise'],
+      ignoreDependencies: [
+        '@lumirelle/oxlint-config',
+        'bumpp',
+        'nano-staged',
+      ],
     },
     'docs': {
       ignoreDependencies: [
@@ -14,6 +20,9 @@ export default {
         'pinia',
         'uno.css',
       ],
+    },
+    'packages/pkg-placeholder': {
+      entry: ['./test/**/*.{ts,js}'],
     },
   },
 } satisfies KnipConfig

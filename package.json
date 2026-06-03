@@ -63,7 +63,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:check",
-    "@arethetypeswrong/core": "catalog:check",
     "@lumirelle/oxlint-config": "catalog:check",
     "@lumirelle/tsconfig": "catalog:types",
     "@types/node": "catalog:types",
@@ -75,8 +74,6 @@
     "nano-staged": "catalog:check",
     "oxlint": "catalog:check",
     "oxlint-tsgolint": "catalog:check",
-    "publint": "catalog:check",
-    "tsdown": "catalog:build",
     "tsnapi": "catalog:test",
     "typescript": "catalog:types"
   },

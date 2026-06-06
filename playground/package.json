@@ -2,7 +2,12 @@
   "name": "playground",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun ./src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
-    "@lumirelle/pkg-placeholder": "catalog:workspace"
+    "@lumirelle/pkg-placeholder": "catalog:workspace",
+    "typescript": "catalog:types"
   }
 }

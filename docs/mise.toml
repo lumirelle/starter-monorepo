@@ -2,13 +2,10 @@
 _.path = [ "./node_modules/.bin" ]
 
 [tasks.dev]
-run = "aubr dev"
+run = "vitepress dev"
 
 [tasks.build]
-run = "aubr build"
+run = "vitepress build"
 
 [tasks.start]
-run = "aubr preview"
-
-[tasks.typecheck]
-run = "aubr typecheck"
+run = "vitepress preview"

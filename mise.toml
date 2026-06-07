@@ -6,6 +6,8 @@ _.path = [ "./node_modules/.bin" ]
 [tools]
 bun = "latest"
 aube = "latest"
+pkl = "latest"
+hk = "latest"
 
 [monorepo]
 config_roots = [
@@ -14,11 +16,22 @@ config_roots = [
   "playground/"
 ]
 
-[tasks.prepare]
-run = "mise generate git-pre-commit --write"
+[hooks]
+enter = "hk install"
+
+[deps.auto-aube]
+sources = [
+  "package.json",
+  "bun.lock"
+]
+outputs = [ "node_modules/" ]
+# Because aube's output lockfile has bugs,
+# we use `bun install --lockfile-only` to generate a lockfile
+run = "bun install --lockfile-only && aube install"
+auto = true
 
 [tasks.pre-commit]
-run = "nano-staged"
+run = "hk run pre-commit"
 
 [tasks.dev]
 run = { task = "//packages/...:dev" }
@@ -41,41 +54,22 @@ run = { task = "//docs:start" }
 [tasks.play]
 run = { task = "//playground:play" }
 
-[tasks.lint]
-run = [
-  "aubr oxlint",
-  "aubr eslint"
-]
-
-[tasks."lint:fix"]
-run = [
-  "aubr oxlint --fix",
-  "aubr eslint --fix"
-]
-
-[tasks.typecheck]
-run = { tasks = [
-  "//packages/...:typecheck",
-  "//docs:typecheck",
-  "//playground:typecheck"
-] }
-
-[tasks.unused]
-run = "aubr unused"
-
 [tasks.check]
-run = { tasks = [
-  "lint",
-  "typecheck",
-  "unused",
-] }
+depends = "build"
+run = "hk check --all"
+
+[tasks.fix]
+depends = "build"
+run = "hk fix --all"
 
 [tasks.test]
 depends = "build"
-run = "aubr test"
+# It seems like run vitest.cmd directly will cause
+# tsnapi missing it's snapshot state...
+run = "aubr vitest run"
 
 [tasks."test:watch"]
-run = "aubr test:watch"
+run = "aubr vitest"
 
 [tasks.prerelease]
 run = { tasks = [
@@ -92,6 +86,12 @@ rm bun.lock
 bun install --lockfile-only
 git add bun.lock
 
-aubr release
+bumpp --recursive
 """
 raw = true
+
+[tasks.publish]
+run = "aube publish --recursive --access public --tag latest"
+
+[tasks."publish:commit"]
+run = "aubx pkg-pr-new publish --bun packages/*"

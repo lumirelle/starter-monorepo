@@ -2,14 +2,9 @@
   "name": "docs",
   "type": "module",
   "private": true,
-  "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "start": "vitepress start",
-    "typecheck": "tsc --noEmit"
-  },
   "devDependencies": {
     "@iconify-json/svg-spinners": "catalog:docs",
+    "@lumirelle/tsconfig": "catalog:types",
     "@shikijs/vitepress-twoslash": "catalog:docs",
     "@unocss/reset": "catalog:docs",
     "@vueuse/core": "catalog:docs",

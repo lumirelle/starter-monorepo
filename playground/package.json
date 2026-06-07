@@ -8,6 +8,7 @@
   },
   "devDependencies": {
     "@lumirelle/pkg-placeholder": "catalog:workspace",
+    "@lumirelle/tsconfig": "catalog:types",
     "typescript": "catalog:types"
   }
 }

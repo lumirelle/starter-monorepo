@@ -2,14 +2,10 @@
 _.path = [ "./node_modules/.bin" ]
 
 [tasks.dev]
-run = "aubr dev"
+run = "tsdown --watch"
 
 [tasks.build]
-run = "aubr build"
+run = "tsdown --publint --attw.profile esm-only"
 
 [tasks.start]
-run = "aubr start"
-
-[tasks.typecheck]
-depends = "//:build"
-run = "aubr typecheck"
+run = "bun ./src/index.ts"

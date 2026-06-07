@@ -4,11 +4,7 @@ export default {
   workspaces: {
     '.': {
       entry: ['./test/**/*.{ts,js}'],
-      ignoreBinaries: ['mise'],
-      ignoreDependencies: [
-        '@lumirelle/oxlint-config',
-        'nano-staged',
-      ],
+      ignoreDependencies: ['@lumirelle/oxlint-config'],
     },
     'docs': {
       ignoreDependencies: [

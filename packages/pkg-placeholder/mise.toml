@@ -9,3 +9,6 @@ run = "tsdown --publint --attw.profile esm-only"
 
 [tasks.start]
 run = "bun ./src/index.ts"
+
+[tasks.publish]
+run = "bun pm pack --filename {{ config_root }}/release.tgz && npm publish {{ config_root }}/release.tgz --access public --tag latest"

@@ -5,7 +5,8 @@ _.path = [ "./node_modules/.bin" ]
 
 [tools]
 bun = "latest"
-aube = "latest"
+"github:jdx/aube" = "latest"
+npm = "latest"
 pkl = "latest"
 hk = "latest"
 
@@ -91,7 +92,7 @@ bumpp --recursive
 raw = true
 
 [tasks.publish]
-run = "aube publish --recursive --access public --tag latest"
+run = { task = "//packages/...:publish" }
 
 [tasks."publish:commit"]
 run = "aubx pkg-pr-new publish --bun packages/*"

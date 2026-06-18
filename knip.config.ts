@@ -4,7 +4,8 @@ export default {
   workspaces: {
     '.': {
       entry: ['./test/**/*.{ts,js}'],
-      ignoreDependencies: ['@lumirelle/oxlint-config'],
+      ignoreFiles: ['taze.config.ts'],
+      ignoreDependencies: ['@lumirelle/oxlint-config', 'taze'],
     },
     'docs': {
       ignoreDependencies: [

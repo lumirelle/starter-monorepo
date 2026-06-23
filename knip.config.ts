@@ -1,24 +1,37 @@
 import type { KnipConfig } from 'knip'
 
 export default {
-  workspaces: {
-    '.': {
-      entry: ['./test/**/*.{ts,js}'],
-      ignoreFiles: ['taze.config.ts'],
-      ignoreDependencies: ['@lumirelle/oxlint-config', 'taze'],
-    },
-    'docs': {
-      ignoreDependencies: [
-        '@iconify-json/svg-spinners',
-        '@unocss/reset',
-        '@vueuse/core',
-        'floating-vue',
-        'pinia',
-        'uno.css',
-      ],
-    },
-    'packages/pkg-placeholder': {
-      entry: ['./test/**/*.{ts,js}'],
-    },
-  },
+  ignoreFiles: [
+    // Snapshots
+    'test/__snapshots__/**',
+
+    // TODO(Lumirelle): Create a pull request to add taze plugin for knip.
+    'taze.config.ts',
+  ],
+  ignoreDependencies: [
+    // Build tools
+    'tsdown',
+
+    // Check tools
+    '@lumirelle/oxlint-config',
+    '@arethetypeswrong/cli',
+    'publint',
+
+    // Dependencies manager
+    'taze',
+
+    // Releasing tools
+    'bumpp',
+    'changelogithub',
+    'pkg-pr-new',
+    'npm',
+
+    // Docs
+    '@iconify-json/svg-spinners',
+    '@unocss/reset',
+    '@vueuse/core',
+    'floating-vue',
+    'pinia',
+    'uno.css',
+  ],
 } satisfies KnipConfig

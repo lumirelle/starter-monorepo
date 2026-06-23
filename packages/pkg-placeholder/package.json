@@ -32,8 +32,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@arethetypeswrong/core": "catalog:build",
-    "publint": "catalog:build",
+    "@lumirelle/tsconfig": "catalog:types",
     "tsdown": "catalog:build",
     "typescript": "catalog:types"
   }
